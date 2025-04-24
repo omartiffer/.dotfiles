@@ -30,4 +30,10 @@ if [[ "$dry_run" == "false" ]]; then
         ~/.config/tmux/plugins/catppuccin/tmux
 fi
 
+### Install Tmuxinator ###
+log INFO "Installing Tmuxinator..."
+if [[ "$dry_run" == "false" ]]; then
+    sudo apt install -y tmuxinator
+fi
+
 log OK "Tmux setup complete!\n"
