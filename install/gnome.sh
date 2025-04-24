@@ -3,7 +3,7 @@
 set -euo pipefail
 trap 'echo -e "\nError on line $LINENO: $BASH_COMMAND"' ERR
 
-source "../utils/log.sh"
+source "$DOTFILES/utils/log.sh"
 
 ### Globals ###
 
@@ -84,12 +84,12 @@ done < "$EXT_DIS"
 ### Final configuration ###
 log INFO "Restoring background images..."
 if [[ "$dry_run" == "false" ]]; then
-	cp -av "./gnome-files/backgrounds/*" "$HOME/.local/share/backgrounds/"
+	cp -av "$DOTFILES/install/gnome-files/backgrounds/*" "$HOME/.local/share/backgrounds/"
 fi
 
 log INFO "Loading Gnome dconf file..."
 if [[ "$dry_run" == "false" ]]; then
-	dconf load /org/gnome/ < "./gnome-files/gnome.dconf"
+	dconf load /org/gnome/ < "$DOTFILES/install/gnome-files/gnome.dconf"
 fi
 
 log OK "GNOME setup complete!\n"

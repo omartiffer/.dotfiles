@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "../utils/log.sh"
+source "$DOTFILES/utils/log.sh"
 
 ### Parse args ###
 dry_run="false"
@@ -36,7 +36,7 @@ if [[ ! -d "$HOME/.local/src" ]]; then
 fi
 
 if [[ "$dry_run" == "false" ]]; then
-    git clone https://github.com/ghostty-org/ghostty "\$HOME/.local/src/ghostty"
+    git clone https://github.com/ghostty-org/ghostty "$HOME/.local/src/ghostty"
 fi
 
 log INFO "Building Ghostty..."

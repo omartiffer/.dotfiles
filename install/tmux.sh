@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "../utils/log.sh"
+source "$DOTFILES/utils/log.sh"
 
 ### Parse args ###
 
@@ -19,15 +19,15 @@ fi
 ### Install Tmux plugin manager ###
 log INFO "Installing Tmux plugin manager..."
 if [[ "$dry_run" == "false" ]]; then
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 fi
 
 ### Install Catppuccin theme for Tmux ###
 log INFO "Installing Catppuccin theme..."
 if [[ "$dry_run" == "false" ]]; then
-    mkdir -p ~/.config/tmux/plugins/catppuccin
+    mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
     git clone -b v2.1.3 https://github.com/catppuccin/tmux.git \
-        ~/.config/tmux/plugins/catppuccin/tmux
+        "$HOME/.config/tmux/plugins/catppuccin/tmux"
 fi
 
 ### Install Tmuxinator ###

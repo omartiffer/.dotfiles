@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "../utils/log.sh"
+source "$DOTFILES/utils/log.sh"
 
 ### Parse args ###
 dry_run="false"
