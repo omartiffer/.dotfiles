@@ -87,7 +87,7 @@ if [[ "$dry_run" == "false" ]]; then
 	cp -av "./gnome-files/backgrounds/*" "$HOME/.local/share/backgrounds/"
 fi
 
-log INFO "Loading dconf file..."
+log INFO "Loading Gnome dconf file..."
 if [[ "$dry_run" == "false" ]]; then
 	dconf load /org/gnome/ < "./gnome-files/gnome.dconf"
 fi

@@ -1,0 +1,26 @@
+#theme = catppuccin-frappe
+#theme = catppuccin-macchiato
+theme = catppuccin-mocha
+#theme = Dracula 
+#theme = Dracula+
+#theme = nightfox
+#theme = tokyonight
+#theme = tokyonight-storm
+#theme = tokyonight_moon
+#theme = tokyonight_night
+#theme = rose-pine
+#theme = rose-pine-moon
+#theme = NightOwl
+#theme = Monokai Pro
+#theme = Monokai Pro Octagon
+#theme = Monokai Pro Spectrum
+#theme = Monokai Pro Machine
+# background = 000000
+
+shell-integration-features = no-cursor,no-sudo,no-title
+gtk-titlebar = false
+background-opacity = 0.95
+
+# what is a prefix?
+# keybind = ctrl+d=scroll_page_fractional:0.5
+# keybind = ctrl+u=scroll_page_fractional:-0.5
