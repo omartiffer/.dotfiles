@@ -16,9 +16,9 @@ I'll keep adding things as I explore and learn more.
 ### I learned a lot from these people
 
 - [@dwt1](https://gitlab.com/dwt1) – I learned a lot from this guy when I was considering using a bare repo for my dotfiles.
-- [@ThePrimeagen](https://github.com/ThePrimeagen) – I studied the scripts in his dotfiles repo line by line (no shame). Check out his [Dev Productivity](https://frontendmasters.com/courses/developer-productivity-v2/) course on **Frontend Masters**.
+- [@ThePrimeagen](https://github.com/ThePrimeagen) – I studied the scripts in his dotfiles repo line by line. Check out his [Dev Productivity](https://frontendmasters.com/courses/developer-productivity-v2/) course on **Frontend Masters**.
 
-If you see something familiar in here, it’s probably because I learned (shamefully copied) it from one of them.
+If you see something familiar in here, it’s probably because I learned (shamelessly copied) it from one of them.
 
 ### Liability insurance
 
