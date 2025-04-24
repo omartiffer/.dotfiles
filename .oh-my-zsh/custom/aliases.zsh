@@ -1,0 +1,5 @@
+alias ll="ls -lhS --group-directories-first"
+alias vim="nvim"
+alias tx="tmuxinator"
+alias tx-mysite="tmuxinator start mysite -- -d"
+alias tx-ramisite="tmuxinator start ramisite -- -d"
