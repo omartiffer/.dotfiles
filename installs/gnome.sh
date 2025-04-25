@@ -91,7 +91,7 @@ main() {
     if_not_dry find "$DOTFILES/gnome-files/backgrounds" -type f -exec cp -av {} "$HOME/.local/share/backgrounds/" \;
 
     log INFO "Loading Gnome dconf file..."
-    if_not_dry dconf load /org/gnome/ < "$DOTFILES/gnome-files/gnome.dconf"
+    if_not_dry dconf load / < "$DOTFILES/gnome-files/gnome-root.dconf"
 
     log OK "GNOME setup complete!\n"
 }
