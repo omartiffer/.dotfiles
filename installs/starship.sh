@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "$DOTFILES/utils/log.sh"
+source "$DOTFILES/utils.sh"
 
 ### Parse args ###
 dry_run="false"
@@ -11,8 +11,6 @@ fi
 
 ### Install Starship prompt ###
 log INFO "Installing Starship shell prompt..."
-if [[ "$dry_run" == "false" ]]; then
-    curl -sS https://starship.rs/install.sh | sh
-fi
+if_not_dry curl -sS https://starship.rs/install.sh | sh
 
 log OK "Ghostty setup complete!\n"

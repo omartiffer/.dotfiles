@@ -7,6 +7,8 @@
 if_not_dry() {
 	if [[ "$dry_run" == "false" ]]; then
 		"$@"
+    else
+        log PLAIN "Would run $*"
 	fi
 }
 

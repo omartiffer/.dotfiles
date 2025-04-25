@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "$DOTFILES/utils/log.sh"
+source "$DOTFILES/utils.sh"
 
 ### Parse args ###
 
@@ -12,28 +12,20 @@ fi
 
 ### Install Tmux ###
 log INFO "Installing Tmux..."
-if [[ "$dry_run" == "false" ]]; then
-    sudo apt install -y tmux
-fi
+if_not_dry sudo apt install -y tmux
 
 ### Install Tmux plugin manager ###
 log INFO "Installing Tmux plugin manager..."
-if [[ "$dry_run" == "false" ]]; then
-    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
-fi
+if_not_dry git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 
 ### Install Catppuccin theme for Tmux ###
 log INFO "Installing Catppuccin theme..."
-if [[ "$dry_run" == "false" ]]; then
-    mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
-    git clone -b v2.1.3 https://github.com/catppuccin/tmux.git \
+if_not_dry mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
+if_not_dry git clone -b v2.1.3 https://github.com/catppuccin/tmux.git \
         "$HOME/.config/tmux/plugins/catppuccin/tmux"
-fi
 
 ### Install Tmuxinator ###
 log INFO "Installing Tmuxinator..."
-if [[ "$dry_run" == "false" ]]; then
-    sudo apt install -y tmuxinator
-fi
+if_not_dry sudo apt install -y tmuxinator
 
 log OK "Tmux setup complete!\n"
