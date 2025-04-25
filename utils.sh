@@ -6,9 +6,9 @@
 #--------------------------------------------------------
 if_not_dry() {
 	if [[ "$dry_run" == "false" ]]; then
-		"$@"
-    else
-        log PLAIN "Would run $*"
+	    "$@"
+	else
+       	log PLAIN "Would run $*"
 	fi
 }
 
@@ -19,24 +19,25 @@ if_not_dry() {
 # Example: log "This will print unformatted"
 #--------------------------------------------------------
 log() {
-    local PLAIN='\033[0m'
-    local OK='\033[0;32m'
-    local ERR='\033[0;31m'
-    local INFO='\033[0;34m'
-    local WARN='\033[1;33m'
+	local PLAIN='\033[0m'
+   	local OK='\033[0;32m'
+   	local ERR='\033[0;31m'
+   	local INFO='\033[0;34m'
+   	local WARN='\033[1;33m'
 
-    local color_arg="${1}"
-    local message="${2:-$1}"
+   	local color_arg="${1}"
+   	local message="${2:-$1}"
 
-    case "$color_arg" in
-        PLAIN|OK|ERR|INFO|WARN)
-            local color="${!color_arg}" ;;
-        *) local color=$PLAIN ;;
-    esac
+   	case "$color_arg" in
+		PLAIN|OK|ERR|INFO|WARN)
+			local color="${!color_arg}" ;;
+       	*)
+            local color=$PLAIN ;;
+	esac
 
     if [[ "$dry_run" == "true" ]]; then
-        echo -e "${color}[DRY_RUN]: ${message}${PLAIN}"
+       	echo -e "${color}[DRY_RUN]: ${message}${PLAIN}"
     else
-	    echo -e "${color}${message}${PLAIN}"
-    fi
+		echo -e "${color}${message}${PLAIN}"
+	fi
 }

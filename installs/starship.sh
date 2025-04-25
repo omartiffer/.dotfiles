@@ -6,7 +6,7 @@ source "$DOTFILES/utils.sh"
 dry_run="false"
 
 if [[ "${1:-}" == "--dry-run" ]]; then
-	dry_run="true"
+    dry_run="true"
 fi
 
 ### Install Starship prompt ###
