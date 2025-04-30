@@ -99,12 +99,12 @@ preload-engines=['xkb:us:intl:eng']
 version='1.5.29'
 
 [org/gnome/Extensions]
-window-height=1
+window-height=100
 window-maximized=true
-window-width=190
+window-width=270
 
 [org/gnome/control-center]
-last-panel='multitasking'
+last-panel='keyboard'
 window-state=(980, 640, true)
 
 [org/gnome/deja-dup]
@@ -145,9 +145,9 @@ primary-color='#2c001e'
 secondary-color='#2c001e'
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('xkb', 'us'), ('xkb', 'us+intl')]
+mru-sources=[('xkb', 'us'), ('xkb', 'us+dvorak'), ('xkb', 'us+intl'), ('xkb', 'us+dvp')]
 per-window=false
-sources=[('xkb', 'us'), ('xkb', 'us+intl')]
+sources=[('xkb', 'us'), ('xkb', 'us+dvorak'), ('xkb', 'us+intl'), ('xkb', 'us+dvp')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
@@ -217,6 +217,8 @@ move-to-workspace-1=['<Control><Alt>1']
 move-to-workspace-2=['<Control><Alt>2']
 move-to-workspace-3=['<Control><Alt>3']
 move-to-workspace-4=['<Control><Alt>4']
+move-to-workspace-5=['<Control><Alt>5']
+move-to-workspace-6=['<Control><Alt>6']
 move-to-workspace-last=@as []
 move-to-workspace-left=['<Control><Alt>h']
 move-to-workspace-right=['<Control><Alt>l']
@@ -228,6 +230,8 @@ switch-to-workspace-1=['<Alt>1']
 switch-to-workspace-2=['<Alt>2']
 switch-to-workspace-3=['<Alt>3']
 switch-to-workspace-4=['<Alt>4']
+switch-to-workspace-5=['<Alt>5']
+switch-to-workspace-6=['<Alt>6']
 switch-to-workspace-last=@as []
 switch-to-workspace-left=['<Alt>h']
 switch-to-workspace-right=['<Alt>l']
@@ -289,7 +293,7 @@ sleep-inactive-ac-type='nothing'
 
 [org/gnome/shell]
 disabled-extensions=['ding@rastersoft.com', 'ubuntu-appindicators@ubuntu.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'compact-quick-settings@gnome-shell-extensions.mariospr.org', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com']
-enabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'space-bar@luchrioh', 'switcher@landau.fi', 'just-perfection-desktop@just-perfection']
+enabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'space-bar@luchrioh', 'switcher@landau.fi']
 favorite-apps=['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop']
 welcome-dialog-last-shown-version='46.0'
 
@@ -333,7 +337,7 @@ panel=true
 panel-icon-size=0
 panel-in-overview=true
 panel-notification-icon=true
-panel-size=52
+panel-size=0
 power-icon=true
 quick-settings=true
 quick-settings-dark-mode=false
@@ -364,23 +368,10 @@ workspaces-in-app-grid=false
 world-clock=false
 
 [org/gnome/shell/extensions/space-bar/appearance]
-active-workspace-background-color='rgb(255,163,72)'
-active-workspace-border-color='rgba(0,0,0,0)'
-active-workspace-border-radius=2
-active-workspace-font-weight='700'
-active-workspace-padding-h=6
-active-workspace-padding-v=0
-application-styles='.space-bar {\n  -natural-hpadding: 6px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 2px;\n  background-color: rgb(255,163,72);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 2px;\n  border-width: 0px;\n  padding: 0px 6px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 2px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 2px;\n  border-width: 0px;\n  padding: 0px 6px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 2px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 2px;\n  border-width: 0px;\n  padding: 0px 6px;\n}'
-empty-workspace-background-color='rgba(0,0,0,0)'
-empty-workspace-border-radius=2
-empty-workspace-font-weight='700'
-empty-workspace-padding-h=6
-empty-workspace-padding-v=0
-inactive-workspace-background-color='rgba(0,0,0,0)'
-inactive-workspace-border-radius=2
-inactive-workspace-font-weight='700'
-inactive-workspace-padding-h=6
-inactive-workspace-padding-v=0
+active-workspace-background-color='rgb(119,118,123)'
+application-styles='.space-bar {\n  -natural-hpadding: 6px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 2px;\n  background-color: rgb(119,118,123);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 2px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 2px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
+custom-styles-enabled=false
+custom-styles-failed=false
 workspace-margin=2
 workspaces-bar-padding=6
 
@@ -407,7 +398,7 @@ version=33
 fade-enable=false
 font-size=uint32 22
 icon-size=uint32 26
-launcher-stats='{"org.gnome.gedit.desktop":2,"com.mattjakeman.ExtensionManager.desktop":4,"com.mitchellh.ghostty.desktop":3,"org.gnome.Settings.desktop":1,"google-chrome.desktop":1,"org.gnome.Extensions.desktop":4}'
+launcher-stats='{"org.gnome.gedit.desktop":2,"com.mattjakeman.ExtensionManager.desktop":4,"com.mitchellh.ghostty.desktop":7,"org.gnome.Settings.desktop":3,"google-chrome.desktop":4,"org.gnome.Extensions.desktop":8,"klavaro.desktop":1}'
 max-width-percentage=uint32 48
 on-active-display=true
 ordering=uint32 1
@@ -437,7 +428,7 @@ use-transparent-background=true
 
 [org/gtk/gtk4/settings/color-chooser]
 custom-colors=[(0.0, 0.0, 0.0, 0.0), (1.0, 1.0, 1.0, 0.30000001192092896)]
-selected-color=(true, 0.0, 0.0, 0.0, 0.0)
+selected-color=(true, 0.46666666865348816, 0.46274510025978088, 0.48235294222831726, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'

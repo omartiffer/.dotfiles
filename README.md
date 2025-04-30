@@ -1,7 +1,7 @@
 # Dotfiles
 
 > **"This was supposed to be fun!"**  
-> Me, 3 hours into trying to be *dotfiles*-cool.
+> Me, 3 hours into trying to be _dotfiles_-cool.
 
 This is me learning how to use shell scripts (I knew very little when I started) to automate the setup of my next shiny computer. It’s an evolving collection of config files, setup scripts, and personal preferences that will hopefully become a full environment bootstrapper.
 
@@ -23,5 +23,5 @@ I'll keep adding things as I explore and learn more.
 ### Liability insurance
 
 These files are tailored for my machine, OS, and habits — but feel free to use, fork, suggest changes, or just laugh at my choices.
- 
+
 ---
