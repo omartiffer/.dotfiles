@@ -5,7 +5,7 @@ return {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
         "MunifTanjim/nui.nvim",
-        "3rd/image.nvim",
+        --"3rd/image.nvim",
         {
             "s1n7ax/nvim-window-picker", -- for open_with_window_picker keymaps
             version = "2.*",
@@ -39,7 +39,7 @@ return {
                         "toggle_preview",
                         config = {
                             use_float = true,
-                            use_image_nvim = true,
+                            use_image_nvim = false,
                         },
                     },
                 },
