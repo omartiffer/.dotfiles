@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+PrevPrev#!/usr/bin/env bash
 
 set -euo pipefail
 trap 'echo -e "\nError on line $LINENO: $BASH_COMMAND"' ERR
