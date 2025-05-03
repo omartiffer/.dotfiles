@@ -6,11 +6,11 @@ source "$DOTFILES/utils.sh"
 dry_run="false"
 
 if [[ "${1:-}" == "--dry-run" ]]; then
-	dry_run="true"
+    dry_run="true"
 fi
 
 ### Install Starship prompt ###
 log INFO "Installing Starship shell prompt..."
-if_not_dry curl -sS https://starship.rs/install.sh | sh
+if_not_dry "curl -sS https://starship.rs/install.sh | sh"
 
-log OK "Ghostty setup complete!\n"
+log OK "Starship setup complete!\n"

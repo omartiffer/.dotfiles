@@ -3,7 +3,6 @@
 source "$DOTFILES/utils.sh"
 
 ### Parse args ###
-
 dry_run="false"
 
 if [[ "${1:-}" == "--dry-run" ]]; then
