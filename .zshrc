@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 # ENVs
 export EDITOR='nvim'
-export DOTFILES=$HOME/WORKSPACE/.dotfiles
+export DOTFILES=$HOME/workspace/.dotfiles
 
 # Add to PATH
 export PATH=$PATH:/usr/local/go/bin
