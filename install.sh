@@ -17,11 +17,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set -euo pipefail
-trap 'echo -e "\nError on line $LINENO: $BASH_COMMAND"' ERR
-
-export DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
 source "$DOTFILES"/utils.sh
 
 ### Parse args ###
