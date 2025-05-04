@@ -29,8 +29,4 @@ if_not_dry git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
 if_not_dry git clone https://github.com/MichaelAquilina/zsh-you-should-use.git \
     "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/you-should-use"
 
-### Reload OMZ conf ###
-log INFO "Reloading OMZ config..."
-if_not_dry omz reload
-
 log OK "Zhs setup complete!\n"

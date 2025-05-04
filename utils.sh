@@ -5,9 +5,9 @@
 #--------------------------------------------------------
 if_not_dry() {
     if [[ "$dry_run" == "false" ]]; then
-        "$*"
+        "$@"
     else
-        log PLAIN "Would run $*"
+        log PLAIN "[DRY_RUN] Would run $*"
     fi
 }
 
@@ -36,9 +36,5 @@ log() {
         ;;
     esac
 
-    if [[ "$dry_run" == "true" ]]; then
-        echo -e "${color}[DRY_RUN]: ${message}${PLAIN}"
-    else
-        echo -e "${color}${message}${PLAIN}"
-    fi
+    echo -e "${color}${message}${PLAIN}"
 }
