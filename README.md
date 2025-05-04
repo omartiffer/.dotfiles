@@ -16,7 +16,7 @@ I'll keep adding things as I explore and learn more.
 ### Attributions
 
 - [@dwt1](https://gitlab.com/dwt1) – I learned a lot from him when I was considering using a bare repo for my dotfiles.
-- [@ThePrimeagen](https://github.com/ThePrimeagen) – I studied the scripts in his dotfiles repo line by line. Portions of this project are based on code from his [My Dev Setup Is Better Than Yours](https://frontendmasters.com/courses/developer-productivity-v2/) course on [Frontend Masters](https://frontendmasters.com/). The original code was licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and modifications may have been made.
+- [@ThePrimeagen](https://github.com/ThePrimeagen) – I studied the scripts in his dotfiles repo line by line. Portions of this project are based on code from his [My Dev Setup Is Better Than Yours](https://frontendmasters.com/courses/developer-productivity-v2/) course on [Frontend Masters](https://frontendmasters.com/). The original code is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and modifications may have been made.
 
 **NOTE:** I used these repos and course to learn the concepts, syntax, and pick up ideas. Most of the code you'll find here is still my own (and ChatGPT's).
 
