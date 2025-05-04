@@ -1,3 +1,5 @@
+export TERM="xterm-256color"
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -34,15 +36,22 @@ plugins=(git z fzf zsh-autosuggestions you-should-use zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# Set editor env
+# ENVs
 export EDITOR='nvim'
+export DOTFILES=$HOME/WORKSPACE/.dotfiles
+
+# Add to PATH
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.local/my-scripts
+
+# Keymaps
+bindkey -s ^f "tmux-sessionizer\n"
 
 # Initialize Starship
 eval "$(starship init zsh)"
 
 # Enable shell completions for Alacritty
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-
 
 # Enable shell integration for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

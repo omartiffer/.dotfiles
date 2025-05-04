@@ -16,7 +16,7 @@ follow_symlinks = true
 
 [aws]
 format = 'on [$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
-symbol = " "
+symbol = "  "
 style = "bold yellow"
 disabled = false
 expiration_symbol = "X"
@@ -79,8 +79,8 @@ detect_folders = []
 format = "via [$symbol($version(-$name) )]($style)"
 version_format = "v${raw}"
 style = "149 bold"
-symbol = "C "
-disabled = false
+symbol = " "
+
 detect_extensions = [
     "c",
     "h",
@@ -115,7 +115,7 @@ disabled = false
 [cmake]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "△ "
+symbol = " "
 style = "bold blue"
 disabled = false
 detect_extensions = []
@@ -200,7 +200,7 @@ detect_folders = [".dart_tool"]
 [deno]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🦕 "
+symbol = " "
 style = "green bold"
 disabled = false
 detect_extensions = []
@@ -248,7 +248,7 @@ loaded_msg = "loaded"
 unloaded_msg = "not loaded"
 
 [docker_context]
-symbol = "🐳 "
+symbol = " "
 style = "blue bold"
 format = "via [$symbol$context]($style) "
 only_with_files = true
@@ -353,7 +353,7 @@ disabled = true
 
 [gcloud]
 format = 'on [$symbol$account(@$domain)(\($region\))]($style) '
-symbol = "☁️  "
+symbol = "󱇶 "
 style = "bold blue"
 disabled = false
 detect_env_vars = []
@@ -434,7 +434,7 @@ detect_folders = []
 [golang]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🐹 "
+symbol = " "
 style = "bold cyan"
 disabled = false
 not_capable_style = "bold red"
@@ -510,7 +510,7 @@ detect_folders = [
 [helm]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "⎈ "
+symbol = " "
 style = "bold white"
 disabled = false
 detect_extensions = []
@@ -530,7 +530,7 @@ disabled = true
 
 [hostname]
 ssh_only = true
-ssh_symbol = "🌐 "
+ssh_symbol = " "
 trim_at = "."
 detect_env_vars = []
 format = "[$ssh_symbol$hostname]($style) in "
@@ -544,7 +544,7 @@ disabled = false
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
 style = "red dimmed"
-symbol = "☕ "
+symbol = " "
 detect_extensions = [
     "java",
     "class",
@@ -590,7 +590,7 @@ detect_folders = []
 [kotlin]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🅺 "
+symbol = " "
 style = "bold blue"
 kotlin_binary = "kotlin"
 disabled = false
@@ -602,7 +602,7 @@ detect_files = []
 detect_folders = []
 
 [kubernetes]
-symbol = "☸ "
+symbol = "󱃾 "
 format = '[$symbol$context( \($namespace\))]($style) in '
 style = "cyan bold"
 disabled = true
@@ -628,7 +628,7 @@ disabled = true
 [lua]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🌙 "
+symbol = " "
 style = "bold blue"
 lua_binary = "lua"
 disabled = false
@@ -640,7 +640,7 @@ detect_folders = ["lua"]
 threshold = 75
 format = "via $symbol[$ram( | $swap)]($style) "
 style = "white bold dimmed"
-symbol = "🐏 "
+symbol = "󰍛 "
 disabled = true
 
 [meson]
@@ -694,26 +694,7 @@ disabled = false
 heuristic = false
 
 [nodejs]
-format = "via [$symbol($version )]($style)"
-version_format = "v${raw}"
-symbol = " "
-style = "bold green"
-disabled = false
-not_capable_style = "bold red"
-detect_extensions = [
-    "js",
-    "mjs",
-    "cjs",
-    "ts",
-    "mts",
-    "cts",
-]
-detect_files = [
-    "package.json",
-    ".node-version",
-    ".nvmrc",
-]
-detect_folders = ["node_modules"]
+symbol = " "
 
 [ocaml]
 format = 'via [$symbol($version )(\($switch_indicator$switch_name\) )]($style)'
@@ -764,7 +745,7 @@ detect_folders = []
 
 [openstack]
 format = 'on [$symbol$cloud(\($project\))]($style) '
-symbol = "☁️  "
+symbol = " "
 style = "bold yellow"
 disabled = false
 
@@ -831,7 +812,7 @@ version_format = "v${raw}"
 [perl]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🐪 "
+symbol = " "
 style = "149 bold"
 disabled = false
 detect_extensions = [
@@ -853,7 +834,7 @@ detect_folders = []
 [php]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🐘 "
+symbol = " "
 style = "147 bold"
 disabled = false
 detect_extensions = ["php"]
@@ -904,7 +885,7 @@ python_binary = [
 format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format = "v${raw}"
 style = "yellow bold"
-symbol = "🐍 "
+symbol = " "
 disabled = false
 detect_extensions = [
     "py",
@@ -981,7 +962,7 @@ detect_folders = [".Rproj.user"]
 [ruby]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "💎 "
+symbol = " "
 style = "bold red"
 disabled = false
 detect_extensions = ["rb"]
@@ -998,7 +979,7 @@ detect_variables = [
 [rust]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🦀 "
+symbol = " "
 style = "bold red"
 disabled = false
 detect_extensions = ["rs"]
@@ -1010,7 +991,7 @@ format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
 disabled = false
 style = "red bold"
-symbol = "🆂 "
+symbol = " "
 detect_extensions = [
     "sbt",
     "scala",
@@ -1024,7 +1005,7 @@ detect_folders = [".metals"]
 
 [shell]
 format = "[$indicator]($style) "
-bash_indicator = "bsh"
+bash_indicator = " "
 fish_indicator = "fsh"
 zsh_indicator = "zsh"
 powershell_indicator = "psh"
@@ -1058,7 +1039,7 @@ format = "via [$symbol($version)]($style)"
 version_format = "v${major}.${minor}.${patch}"
 disabled = false
 style = "bold blue"
-symbol = "S "
+symbol = " "
 compiler = ["solc"]
 detect_extensions = ["sol"]
 detect_files = []
@@ -1097,7 +1078,7 @@ disabled = true
 [swift]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "🐦 "
+symbol = " "
 style = "bold 202"
 disabled = false
 detect_extensions = ["swift"]
@@ -1107,7 +1088,7 @@ detect_folders = []
 [terraform]
 format = "via [$symbol$workspace]($style) "
 version_format = "v${raw}"
-symbol = "💠 "
+symbol = "󱁢 "
 style = "bold 105"
 disabled = false
 detect_extensions = [
@@ -1149,7 +1130,7 @@ disabled = false
 [vagrant]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "⍱ "
+symbol = " "
 style = "cyan bold"
 disabled = false
 detect_extensions = []
@@ -1179,7 +1160,7 @@ detect_folders = []
 [zig]
 format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
-symbol = "↯ "
+symbol = " "
 style = "bold yellow"
 disabled = false
 detect_extensions = ["zig"]

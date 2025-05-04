@@ -51,11 +51,15 @@ copy_file() {
     if_not_dry cp "$from" "$to"
 }
 
-copy_dir "$DOTFILES/.config" "$HOME/.config"
-copy_dir "$DOTFILES/.oh-my-zsh" "$HOME/.oh-my-zsh"
+copy_dir "$DOTFILES"/.config "$HOME"/.config
+copy_dir "$DOTFILES"/.local "$HOME"/.local
 
-copy_file "$DOTFILES/.tmux.conf" "$HOME/.tmux.conf"
-copy_file "$DOTFILES/.zshrc" "$HOME/.zshrc"
-copy_file "$DOTFILES/config.sh" "$HOME/.local/bin/hydrate-conf"
+copy_file "$DOTFILES"/.tmux.conf "$HOME"/.tmux.conf
+copy_file "$DOTFILES"/.zshrc "$HOME"/.zshrc
+copy_file "$DOTFILES"/.oh-my-zsh/aliases.zsh "$HOME"/.oh-my-zsh/custom/aliases.zsh
+copy_file "$DOTFILES"/config.sh "$HOME"/.local/my-scripts/hydrate-conf
 
-if_not_dry chmod u+x "$HOME/.local/bin/hydrate-conf"
+log INFO "Setting appropriate permissions for personal scripts..."
+if_not_dry chmod u+x "$HOME"/.local/my-scripts/hydrate-conf
+if_not_dry chmod u+x "$HOME"/.local/my-scripts/tmux-sessionizer
+if_not_dry chmod u+x "$HOME"/.local/my-scripts/tmux-session-bootstrapper

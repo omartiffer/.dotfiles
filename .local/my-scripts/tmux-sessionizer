@@ -27,7 +27,7 @@ switch_to() {
     fi
 }
 
-selected_dir=$(find "$HOME"/ "$HOME"/.local "$HOME"/.config "$HOME"/WORKSPACE "$HOME"/COURSES -maxdepth 1 -mindepth 1 -type d | fzf)
+selected_dir=$(find "$HOME"/.local "$HOME"/.config "$HOME"/WORKSPACE "$HOME"/COURSES -maxdepth 1 -mindepth 1 -type d | fzf)
 
 if [[ -z "$selected_dir" ]]; then
     exit 0
@@ -35,7 +35,7 @@ fi
 
 session_name=$(basename "$selected_dir" | tr ".,: " "____")
 
-if tmux has-session -t="$session_name"; then
+if tmux has-session -t="$session_name" 2>/dev/null; then
     switch_to "$session_name"
 else
     tmux new-session -ds "$session_name" -c "$selected_dir"
