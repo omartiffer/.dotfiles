@@ -34,7 +34,6 @@ done
 }
 
 main() {
-    ### Install prerequisites ###
     log INFO "Installing required packages..."
 
     if_not_dry sudo apt install -y gnome-browser-connector \
@@ -44,9 +43,7 @@ main() {
     mkdir -p "$HOME/.local/share/gnome-shell/extensions"
     mkdir -p "$HOME/.local/bin"
 
-    ### Get Gnome extension installer ###
     log INFO "Downloading gnome-shell-extension-installer..."
-
     if [[ "$dry_run" == "false" ]]; then
         if wget -q -O "$DOTFILES/installs/gnome-shell-extension-installer" "$EXT_INSTALLER_REPO" 2>/dev/null; then
             log PLAIN "Download successful, installing..."
@@ -62,9 +59,7 @@ main() {
         fi
     fi
 
-    ### Install Gnome extensions ###
     log INFO "Installing GNOME extensions from $EXT_LIST..."
-
     lineno=0
     while IFS= read -r e_uuid; do
         ((++lineno))
@@ -83,9 +78,7 @@ main() {
         fi
     done <"$EXT_LIST"
 
-    ### These will be available but disabled ###
     log INFO "The following extensions will be initially disabled..."
-
     while IFS= read -r ext; do
         [[ -z "$ext" ]] && continue
         log PLAIN "Disabling: $ext"

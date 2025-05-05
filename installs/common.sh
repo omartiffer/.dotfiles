@@ -9,7 +9,7 @@ if [[ "${1:-}" == "--dry-run" ]]; then
 fi
 
 log INFO "Installing common packages..."
-if_not_dry sudo apt install -y git unzip curl jq wget fzf install
+if_not_dry sudo apt install -y git unzip curl jq wget fzf install klavaro
 
 snaps=(
     brave
@@ -36,7 +36,6 @@ done
 
 snaps_classic=(
     aws-cli
-    nvim
     code
     pycharm-community
     intellij-idea-community
@@ -51,4 +50,4 @@ for snap in "${snaps_classic[@]}"; do
     fi
 done
 
-log OK "Successfully installed common apps."
+log OK "Successfully installed common apps\n"
