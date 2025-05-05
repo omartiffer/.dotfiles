@@ -9,7 +9,7 @@ if [[ "${1:-}" == "--dry-run" ]]; then
 fi
 
 log INFO "Installing common packages..."
-if_not_dry sudo apt install -y git unzip curl jq wget ripgrep fzf
+if_not_dry sudo apt install -y git unzip curl jq wget fzf install
 
 snaps=(
     brave
