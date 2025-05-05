@@ -11,7 +11,7 @@ fi
 
 ### Install Ghostty dependency packages ###
 log INFO "Installing Ghostty dependency packages..."
-if_not_dry sudo apt install -y libgtk-4-dev libadwaita-1-dev git blueprint-compiler gettext libxml2-utils
+if_not_dry sudo apt install -y libgtk-4-dev libadwaita-1-dev blueprint-compiler gettext libxml2-utils
 
 ### Install Zig (required to build Ghostty) ###
 log INFO "Downloading Zig to \$HOME/.local/opt and adding it to \$PATH..."

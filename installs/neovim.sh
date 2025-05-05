@@ -11,7 +11,7 @@ fi
 
 ### Install development dependencies ###
 log INFO "Installing dependencies..."
-if_not_dry sudo apt install -y lua5.1 liblua5.1-0 liblua5.1-dev install build-essential libreadline-dev unzip
+if_not_dry sudo apt install -y lua5.1 liblua5.1-0 liblua5.1-dev build-essential libreadline-dev
 
 ### Install plugin dependencies ###
 log INFO "Installing Telescope dependencies..."
