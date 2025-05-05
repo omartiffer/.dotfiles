@@ -5,7 +5,7 @@ source "$DOTFILES/utils.sh"
 parse_args "$@"
 
 log INFO "Installing common packages..."
-if_not_dry sudo apt install -y git unzip curl jq wget fzf install klavaro
+if_not_dry sudo apt install -y git unzip curl jq wget fzf install klavaro ca-certificates
 
 snaps=(
     brave
