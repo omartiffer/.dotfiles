@@ -39,6 +39,6 @@ if tmux has-session -t="$session_name" 2>/dev/null; then
     switch_to "$session_name"
 else
     tmux new-session -ds "$session_name" -c "$selected_dir"
+    tmux send-keys -t "$session_name" "tmux-session-bootstrapper" ^M &>/dev/null
     switch_to "$session_name"
-    #tmux send-keys -t "$session_name" "tmux-session-bootstrapper" ^M
 fi

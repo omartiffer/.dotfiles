@@ -32,7 +32,9 @@ while [[ $# -gt 0 ]]; do
     shift
 done
 
-log INFO "Running with filter=$filter..."
+if [[ -n $filter ]]; then
+    log INFO "Running with filter=$filter..."
+fi
 
 while IFS= read -r script; do
     if echo "$script" | grep -qv "$filter"; then
@@ -47,3 +49,5 @@ while IFS= read -r script; do
         bash "$script"
     fi
 done < <(find "$DOTFILES"/installs -maxdepth 1 -mindepth 1 -type f)
+
+log OK "Installation complete\n"
