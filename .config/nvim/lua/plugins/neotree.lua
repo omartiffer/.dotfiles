@@ -30,10 +30,10 @@ return {
     lazy = false,
     config = function()
         require("neo-tree").setup({
-            enable_cursor_hijack = true,
+            enable_cursor_hijack = false,
             use_popups_for_input = true,
             window = {
-                width = 40,
+                position = "current",
                 mappings = {
                     ["P"] = {
                         "toggle_preview",

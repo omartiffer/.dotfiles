@@ -6,7 +6,7 @@ source "$DOTFILES/utils.sh"
 dry_run="false"
 
 if [[ "${1:-}" == "--dry-run" ]]; then
-	dry_run="true"
+    dry_run="true"
 fi
 
 ### Install development dependencies ###
@@ -22,10 +22,10 @@ log INFO "Installing LuaRocks..."
 if_not_dry wget https://luarocks.org/releases/luarocks-3.11.1.tar.gz -O /tmp/luarocks-3.11.1.tar.gz
 if_not_dry tar zxpf /tmp/luarocks-3.11.1.tar.gz -C "$HOME/.local/src"
 (
-	if_not_dry cd "$HOME/.local/src/luarocks-3.11.1"
-	if_not_dry ./configure --with-lua-include=/usr/include
-	if_not_dry make
-	if_not_dry sudo make install
+    if_not_dry cd "$HOME/.local/src/luarocks-3.11.1"
+    if_not_dry ./configure --with-lua-include=/usr/include
+    if_not_dry make
+    if_not_dry sudo make install
 )
 
 ### Install Neovim ###
