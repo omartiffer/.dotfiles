@@ -32,9 +32,12 @@ HIST_STAMPS="mm/dd/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git z fzf zsh-autosuggestions you-should-use zsh-syntax-highlighting)
 
-# Aliases are defined in $ZSH_CUSTOM/aliases.zsh
-
 source $ZSH/oh-my-zsh.sh
+
+# Aliases
+alias ll="ls -lhS --group-directories-first"
+alias vim="nvim"
+alias tx="tmuxinator"
 
 # ENVs
 export EDITOR='nvim'

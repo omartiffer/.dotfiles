@@ -1,4 +1,2 @@
-tmux new-window -dn
-vim .
-clear
-
+tmux send-keys "vim ." ^M
+tmux new-window -d

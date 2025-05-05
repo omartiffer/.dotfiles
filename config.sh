@@ -56,7 +56,6 @@ copy_dir "$DOTFILES"/.local "$HOME"/.local
 
 copy_file "$DOTFILES"/.tmux.conf "$HOME"/.tmux.conf
 copy_file "$DOTFILES"/.zshrc "$HOME"/.zshrc
-copy_file "$DOTFILES"/.oh-my-zsh/aliases.zsh "$HOME"/.oh-my-zsh/custom/aliases.zsh
 
 log INFO "Setting appropriate permissions for personal scripts..."
 if_not_dry chmod u+x "$HOME"/.local/my-scripts/tmux-sessionizer

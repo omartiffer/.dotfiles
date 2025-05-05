@@ -17,9 +17,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if [[ -x ./.tmxsrc ]]; then
+if [[ -f ./.tmxsrc ]]; then
     source ./.tmxsrc
-elif [[ -x ~/.tmxsrc ]]; then
+elif [[ -f ~/.config/tmux/.tmxsrc ]]; then
     source ~/.config/tmux/.tmxsrc
 fi
 clear
