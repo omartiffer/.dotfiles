@@ -19,6 +19,49 @@ return {
         config = function()
             local telescope = require("telescope")
             telescope.setup({
+                defaults = {
+                    vimgrep_arguments = {
+                        "rg",
+                        "--follow", -- Follow symbolic links
+                        "--hidden", -- Search for hidden files
+                        "--no-heading", -- Don't group matches by each file
+                        "--with-filename", -- Print the file path with the matched lines
+                        "--line-number", -- Show line numbers
+                        "--column", -- Show column numbers
+                        "--smart-case", -- Smart case search
+                        "--glob=!**/.git/*", -- Exclude .git directories
+                        "--glob=!**/.idea/*", -- Exclude .idea directories
+                        "--glob=!**/.vscode/*", -- Exclude .vscode directories
+                        "--glob=!**/build/*", -- Exclude build directories
+                        "--glob=!**/dist/*", -- Exclude dist directories
+                        "--glob=!**/yarn.lock", -- Exclude yarn.lock files
+                        "--glob=!**/package-lock.json", -- Exclude package-lock.json files
+                    },
+                    file_ignore_patterns = { -- Additional ignore patterns
+                        "node_modules",
+                        "build",
+                        "dist",
+                        "yarn.lock",
+                        "package-lock.json",
+                    },
+                },
+                pickers = {
+                    find_files = {
+                        hidden = true, -- Show hidden files
+                        find_command = { -- Command to find files
+                            "rg",
+                            "--files",
+                            "--hidden",
+                            "--glob=!**/.git/*",
+                            "--glob=!**/.idea/*",
+                            "--glob=!**/.vscode/*",
+                            "--glob=!**/build/*",
+                            "--glob=!**/dist/*",
+                            "--glob=!**/yarn.lock",
+                            "--glob=!**/package-lock.json",
+                        },
+                    },
+                },
                 extensions = {
                     fzf = {
                         fuzzy = true, -- false will only do exact matchingdw
@@ -31,6 +74,7 @@ return {
                     },
                 },
             })
+            telescope.load_extension("fzf")
             telescope.load_extension("ui-select")
 
             local builtin = require("telescope.builtin")
