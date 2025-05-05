@@ -27,7 +27,7 @@ if_not_dry() {
     if [[ "$dry_run" == "false" ]]; then
         "$@"
     else
-        log PLAIN "[DRY_RUN] Would run $*"
+        log PLAIN "[DRY_RUN] Would run $*" >&2
     fi
 }
 
