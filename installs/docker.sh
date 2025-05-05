@@ -4,6 +4,9 @@ source "$DOTFILES/utils.sh"
 
 parse_args "$@"
 
+log INFO "Uninstall all conflicting packages..."
+if_not_dry for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove "$pkg"; done
+
 log INFO "Add Docker's official GPG key..."
 if_not_dry sudo apt-get update
 if_not_dry sudo install -m 0755 -d /etc/apt/keyrings
@@ -19,5 +22,14 @@ if_not_dry sudo apt-get update
 
 log INFO "Installing Docker..."
 if_not_dry sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+log INFO "Creating Docker group and adding the urser to it..."
+if_not_dry sudo groupadd docker
+if_not_dry sudo usermod -aG docker "$USER"
+if_not_dry newgrp docker
+
+log INFO "Fixing permissions on ~/.docker/ (just in case)..."
+if_not_dry sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+if_not_dry sudo chmod g+rwx "$HOME/.docker" -R
 
 log OK "Successfully installed Docker\n"
