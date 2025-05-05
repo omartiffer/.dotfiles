@@ -2,12 +2,7 @@
 
 source "$DOTFILES/utils.sh"
 
-### Parse args ###
-dry_run="false"
-
-if [[ "${1:-}" == "--dry-run" ]]; then
-    dry_run="true"
-fi
+parse_args "$@"
 
 log INFO "Installing dependencies..."
 if_not_dry sudo apt install -y lua5.1 liblua5.1-0 liblua5.1-dev build-essential libreadline-dev

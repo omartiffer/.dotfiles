@@ -19,15 +19,7 @@
 
 source "$DOTFILES"/utils.sh
 
-### Parse args ###
-dry_run="false"
-
-while [[ $# -gt 0 ]]; do
-    if [[ "$1" == "--dry-run" ]]; then
-        dry_run="true"
-    fi
-    shift
-done
+parse_args "$@"
 
 copy_dir() {
     local from=$1

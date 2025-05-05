@@ -19,18 +19,7 @@
 
 source "$DOTFILES"/utils.sh
 
-### Parse args ###
-filter=""
-dry_run="false"
-
-while [[ $# -gt 0 ]]; do
-    if [[ "$1" == "--dry-run" ]]; then
-        dry_run="true"
-    else
-        filter="$1"
-    fi
-    shift
-done
+parse_args "$@"
 
 if [[ -n $filter ]]; then
     log INFO "Running with filter=$filter..."

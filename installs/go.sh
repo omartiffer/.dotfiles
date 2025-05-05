@@ -2,12 +2,7 @@
 
 source "$DOTFILES/utils.sh"
 
-### Parse args ###
-dry_run="false"
-
-if [[ "${1:-}" == "--dry-run" ]]; then
-    dry_run="true"
-fi
+parse_args "$@"
 
 log INFO "Downloading Go binaries..."
 if_not_dry wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz -O /tmp/go1.24.2.linux-amd64.tar.gz

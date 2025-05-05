@@ -2,12 +2,7 @@
 
 source "$DOTFILES/utils.sh"
 
-### Parse args ###
-dry_run="false"
-
-if [[ "${1:-}" == "--dry-run" ]]; then
-    dry_run="true"
-fi
+parse_args "$@"
 
 log INFO "Installing Starship shell prompt..."
 if_not_dry "curl -sS https://starship.rs/install.sh | sh"

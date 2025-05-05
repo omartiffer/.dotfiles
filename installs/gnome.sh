@@ -8,12 +8,7 @@ readonly EXT_INSTALLER_REPO="https://github.com/brunelli/gnome-shell-extension-i
 
 source "$DOTFILES/utils.sh"
 
-### Parse args ###
-dry_run="false"
-
-if [[ "${1:-}" == "--dry-run" ]]; then
-    dry_run="true"
-fi
+parse_args "$@"
 
 ### Make sure required commands are present  ###
 for cmd in curl jq wget; do

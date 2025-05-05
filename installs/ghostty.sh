@@ -2,12 +2,7 @@
 
 source "$DOTFILES/utils.sh"
 
-### Parse args ###
-dry_run="false"
-
-if [[ "${1:-}" == "--dry-run" ]]; then
-    dry_run="true"
-fi
+parse_args "$@"
 
 log INFO "Installing Ghostty dependency packages..."
 if_not_dry sudo apt install -y libgtk-4-dev libadwaita-1-dev blueprint-compiler gettext libxml2-utils

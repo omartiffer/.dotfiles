@@ -1,4 +1,24 @@
 #--------------------------------------------------------
+# Usage: parse_args "$@"
+# Reads all arguments passed and assings 'dry_run' and
+# 'filter' variables no matter the order. If you pass
+# multiple filter arguments, it will take the last one.
+#--------------------------------------------------------
+parse_args() {
+    filter=""
+    dry_run="false"
+
+    while [[ $# -gt 0 ]]; do
+        if [[ "$1" == "--dry-run" ]]; then
+            dry_run="true"
+        else
+            filter="$1"
+        fi
+        shift
+    done
+}
+
+#--------------------------------------------------------
 # Usage: if_not_dry COMMAND
 # Executes the COMMAND if --dry-run is not passed as an
 # argument to the calling script.
