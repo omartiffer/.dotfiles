@@ -33,9 +33,9 @@ while IFS= read -r script; do
 
   log WARN "Running: $script..."
   if [[ $dry_run == "true" ]]; then
-    bash "$script" --dry-run
+    "$script" --dry-run
   else
-    bash "$script"
+    "$script"
   fi
 done < <(find "$DOTFILES"/installs -maxdepth 1 -mindepth 1 -type f)
 
