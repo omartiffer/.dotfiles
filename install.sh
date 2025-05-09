@@ -22,21 +22,21 @@ source "$DOTFILES"/utils.sh
 parse_args "$@"
 
 if [[ -n $filter ]]; then
-    log INFO "Running with filter=$filter..."
+  log INFO "Running with filter=$filter..."
 fi
 
 while IFS= read -r script; do
-    if echo "$script" | grep -qv "$filter"; then
-        log PLAIN "Filtered: $script"
-        continue
-    fi
+  if echo "$script" | grep -qv "$filter"; then
+    log PLAIN "Filtered: $script"
+    continue
+  fi
 
-    log WARN "Running: $script..."
-    if [[ $dry_run == "true" ]]; then
-        bash "$script" --dry-run
-    else
-        bash "$script"
-    fi
+  log WARN "Running: $script..."
+  if [[ $dry_run == "true" ]]; then
+    bash "$script" --dry-run
+  else
+    bash "$script"
+  fi
 done < <(find "$DOTFILES"/installs -maxdepth 1 -mindepth 1 -type f)
 
 log OK "Installation complete\n"

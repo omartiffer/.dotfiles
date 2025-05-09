@@ -18,27 +18,27 @@
 # limitations under the License.
 
 switch_to() {
-    local sname=$1
+  local sname=$1
 
-    if [[ -z "$TMUX" ]]; then
-        tmux attach-session -t "$sname"
-    else
-        tmux switch-client -t "$sname"
-    fi
+  if [[ -z "$TMUX" ]]; then
+    tmux attach-session -t "$sname"
+  else
+    tmux switch-client -t "$sname"
+  fi
 }
 
 selected_dir=$(find "$HOME" "$HOME"/.local "$HOME"/.config "$HOME"/workspace "$HOME"/courses -maxdepth 1 -mindepth 1 -type d | fzf)
 
 if [[ -z "$selected_dir" ]]; then
-    exit 0
+  exit 0
 fi
 
 session_name=$(basename "$selected_dir" | tr ".,: " "____")
 
 if tmux has-session -t="$session_name" 2>/dev/null; then
-    switch_to "$session_name"
+  switch_to "$session_name"
 else
-    tmux new-session -ds "$session_name" -c "$selected_dir"
-    tmux send-keys -t "$session_name" "tmux-session-bootstrapper" ^M &>/dev/null
-    switch_to "$session_name"
+  tmux new-session -ds "$session_name" -c "$selected_dir"
+  tmux send-keys -t "$session_name" "tmux-session-bootstrapper" ^M &>/dev/null
+  switch_to "$session_name"
 fi

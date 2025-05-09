@@ -13,7 +13,7 @@ if_not_dry git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tp
 log INFO "Installing Catppuccin theme..."
 if_not_dry mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
 if_not_dry git clone -b v2.1.3 https://github.com/catppuccin/tmux.git \
-    "$HOME/.config/tmux/plugins/catppuccin/tmux"
+  "$HOME/.config/tmux/plugins/catppuccin/tmux"
 
 log INFO "Installing Tmuxinator..."
 if_not_dry sudo apt install -y tmuxinator

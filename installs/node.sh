@@ -10,7 +10,7 @@ if_not_dry curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install
 if_not_dry \. "$HOME/.nvm/nvm.sh"
 
 log INFO "Downloading and installing Node.js..."
-if_not_dry nvm install 22
+if_not_dry nvm install --lts
 
 log INFO "Installed Node.js version:"
 if_not_dry node -v

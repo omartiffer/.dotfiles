@@ -20,8 +20,8 @@ if_not_dry git clone https://github.com/ghostty-org/ghostty "$HOME/.local/src/gh
 
 log INFO "Building Ghostty..."
 (
-    if_not_dry cd "$HOME/.local/src/ghostty"
-    if_not_dry zig build -p "$HOME/.local -Doptimize=ReleaseFast"
+  if_not_dry cd "$HOME/.local/src/ghostty"
+  if_not_dry zig build -p "$HOME/.local -Doptimize=ReleaseFast"
 )
 
 log OK "Ghostty setup complete!\n"

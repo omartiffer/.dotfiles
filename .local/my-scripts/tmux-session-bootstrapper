@@ -18,8 +18,8 @@
 # limitations under the License.
 
 if [[ -f ./.tmxsrc ]]; then
-    source ./.tmxsrc
+  source ./.tmxsrc
 elif [[ -f ~/.config/tmux/.tmxsrc ]]; then
-    source ~/.config/tmux/.tmxsrc
+  source "$HOME"/.config/tmux/.tmxsrc
 fi
 clear

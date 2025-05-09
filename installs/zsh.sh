@@ -11,14 +11,14 @@ if_not_dry sudo chsh -s "$(which zsh)"
 
 log INFO "Installing Oh My Zsh..."
 if_not_dry sh -c "$(curl -fsSL \
-    https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 log INFO "Installing OMZ plugins..."
 if_not_dry git clone https://github.com/zsh-users/zsh-autosuggestions \
-    "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+  "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
 if_not_dry git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
-    "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+  "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 if_not_dry git clone https://github.com/MichaelAquilina/zsh-you-should-use.git \
-    "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/you-should-use"
+  "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/you-should-use"
 
 log OK "Zhs setup complete!\n"

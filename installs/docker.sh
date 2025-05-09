@@ -6,7 +6,7 @@ parse_args "$@"
 
 log INFO "Uninstall all conflicting packages..."
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do
-    if_not_dry sudo apt-get -y remove "$pkg"
+  if_not_dry sudo apt-get -y remove "$pkg"
 done
 
 log INFO "Add Docker's official GPG key..."
@@ -17,9 +17,9 @@ if_not_dry sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 log INFO "Add the repository to Apt sources..."
 if_not_dry echo \
-    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |
-    sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
+  sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 if_not_dry sudo apt-get update
 
 log INFO "Installing Docker..."
