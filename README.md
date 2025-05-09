@@ -11,6 +11,8 @@ Tested on:
 - OS: Ubuntu 24.04.2 LTS (noble)
 - Desktop env: GNOME 46
 
+https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e
+
 ## ✨ What’s in here?
 
 - ⚙️ Config files for the tools I use
