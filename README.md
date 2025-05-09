@@ -3,13 +3,9 @@
 > **"This was supposed to be fun!"**  
 > Me, 3 hours into trying to be _dotfiles_-cool.
 
-My attempt to shellscript my way out of automating the setup of my next shiny computer. This is an evolving collection of config files, setup scripts, and personal preferences designed as a full environment bootstrapper.
+My attempt to shellscript my way through automating the setup of my next shiny computer. This is an evolving collection of config files, setup scripts, and personal preferences designed as a full environment bootstrapper.
 
-**IMPORTANT:** These files are tailored for my machine, OS, and habits — feel free to use/fork **(at your own risk)**, suggest changes, or just laugh at my choices.
-
-Tested on:
-- OS: Ubuntu 24.04.2 LTS (noble)
-- Desktop env: GNOME 46
+I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of convention over configuration (see [Attributions](#-attributions) below). Whenever I need to change a config, I edit the files in the repo and run [`config.sh`](/config.sh). I might switch approaches later, but this works well for now.
 
 https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e
 
@@ -23,7 +19,7 @@ https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e
 
 I'll keep adding things as the need arises.
 
-## 📂 Project Structure
+## 📂 Project sructure
 
 ```text
 /
@@ -36,7 +32,6 @@ I'll keep adding things as the need arises.
 ├── .tmux.conf              # My Tmux config file (copied to ~/.tmux.conf)
 ├── .zshrc                  # Zsh config file (copied to ~/.zshrc)
 ├── LICENSE                 # License file (see the attributions section)
-├── README.md               # This readme file
 ├── config.sh               # Copies all config files and sessionizer scripts to ~/
 ├── install.sh              # Runs all scripts in the installs/ directory
 └── utils.sh                # Functions used across all scripts
@@ -44,7 +39,12 @@ I'll keep adding things as the need arises.
 
 ## 👨‍💻 Getting started (at your own risk)
 
-I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of convention over configuration (see [Attributions](#-attributions) below). Whenever I need to change a config, I edit the files in the repo and run `config.sh`. I might switch approaches later, but this works well for now.
+**IMPORTANT:** These files are tailored for my machine, OS, and habits — feel free to use/fork **(at your own risk)**, suggest changes, or just laugh at my choices.
+
+Tested on:
+
+- OS: Ubuntu 24.04.2 LTS (noble)
+- Desktop env: GNOME 46
 
 ### 1. Clone the repo
 
@@ -55,7 +55,7 @@ git clone https://github.com/oatiffer/.dotfiles.git
 ### 2. Change into the cloned .dotfiles directory
 
 ```bash
-cd .dotfiles 
+cd .dotfiles
 ```
 
 ### 3. Set the `DOTFILES` environment variable to the absolute path of the cloned repo
@@ -78,10 +78,10 @@ export DOTFILES=$HOME/workspace/.dotfiles
 ./install.sh
 ```
 
-This script runs all available scripts in the `installs/` directory. You can run a specific install script by passing a name to `install.sh` as an argument. For example:
+This script runs all available scripts in the `installs/` directory. You can run a specific install script by passing a name to [`install.sh`](/install.sh) as an argument. For example:
 
 ```bash
-./install docker
+./install.sh docker
 ```
 
 Will only run the docker installation script and skip the rest.
@@ -94,9 +94,22 @@ Will only run the docker installation script and skip the rest.
 
 This script copies all configuration files to their expected locations under `~/` and places the tmux sessionizer scripts in `~/.local/my-scripts`.
 
+### 6. Test before running
+
+```bash
+./install.sh --dry-run
+```
+
+or
+
+```bash
+./config.sh --dry-run
+```
+
 ## 🤝 Attributions
 
 - [@dwt1](https://gitlab.com/dwt1) – I learned a lot from him when I was considering using a bare repo for my dotfiles.
 - [@ThePrimeagen](https://github.com/ThePrimeagen) – I studied the scripts in his dotfiles repo line by line. Portions of this project are based on code from his [My Dev Setup Is Better Than Yours](https://frontendmasters.com/courses/developer-productivity-v2/) course on [Frontend Masters](https://frontendmasters.com/). The original code is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and modifications may have been made.
 
 **NOTE:** I used these repos and course to learn the concepts, syntax, and pick up ideas. Most of the code you'll find here is still my own (and ChatGPT's).
+
