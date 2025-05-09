@@ -1,5 +1,7 @@
 # Dotfiles
 
+[![License](https://img.shields.io/github/license/oatiffer/.dotfiles)](/LICENSE)
+
 > **"This was supposed to be fun!"**  
 > Me, 3 hours into trying to be _dotfiles_-cool.
 
@@ -43,8 +45,8 @@ I'll keep adding things as the need arises.
 
 Tested on:
 
-- OS: Ubuntu 24.04.2 LTS (noble)
-- Desktop env: GNOME 46
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04%20LTS-ef5b24?logo=ubuntu&style=for-the-badge)
+![GNOME](https://img.shields.io/badge/Desktop-GNOME%2046-4a86cf?logo=gnome&style=for-the-badge)
 
 ### 1. Clone the repo
 
