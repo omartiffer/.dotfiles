@@ -9,7 +9,7 @@ My attempt to shellscript my way out of automating the setup of my next shiny co
 
 Tested on:
 - OS: Ubuntu 24.04.2 LTS (noble)
-- Desktop manager: GNOME 46
+- Desktop env: GNOME 46
 
 ### ✨ What’s in here?
 
@@ -76,7 +76,7 @@ export DOTFILES=$HOME/workspace/.dotfiles
 ./install.sh
 ```
 
-This will run all available scripts in the `installs/` directory. You can run a specific install script by passing a name to `install.sh` as an argument. For example:
+This script runs all available scripts in the `installs/` directory. You can run a specific install script by passing a name to `install.sh` as an argument. For example:
 
 ```bash
 ./install docker
