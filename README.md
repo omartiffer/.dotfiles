@@ -11,7 +11,7 @@ Tested on:
 - OS: Ubuntu 24.04.2 LTS (noble)
 - Desktop env: GNOME 46
 
-### ✨ What’s in here?
+## ✨ What’s in here?
 
 - ⚙️ Config files for the tools I use
 - 🚀 Install scripts for those tools
@@ -42,7 +42,7 @@ I'll keep adding things as the need arises.
 
 ## 👨‍💻 Getting started (at your own risk)
 
-I follow the [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of convention over configuration (see [Attributions](#-attributions) below). Whenever I need to change a config, I edit the files in the repo and run `config.sh`. I might switch approaches later, but this works well for now.
+I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of convention over configuration (see [Attributions](#-attributions) below). Whenever I need to change a config, I edit the files in the repo and run `config.sh`. I might switch approaches later, but this works well for now.
 
 ### 1. Clone the repo
 
@@ -56,7 +56,7 @@ git clone https://github.com/oatiffer/.dotfiles.git
 cd .dotfiles 
 ```
 
-### 3. Set the DOTFILES environment variable to the absolute path of the cloned repo
+### 3. Set the `DOTFILES` environment variable to the absolute path of the cloned repo
 
 ```bash
 export DOTFILES=cloned_repo_directory_path
