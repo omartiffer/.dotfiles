@@ -1,4 +1,4 @@
-export TERM="xterm-256color"
+# export TERM="xterm-256color"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
