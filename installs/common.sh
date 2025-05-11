@@ -5,15 +5,12 @@ source "$DOTFILES/utils.sh"
 parse_args "$@"
 
 log INFO "Installing common packages..."
-if_not_dry sudo apt install -y git unzip curl jq wget fzf xclip install klavaro ca-certificates
+if_not_dry sudo apt-get update
+if_not_dry sudo apt-get install -y git unzip curl jq fzf ripgrep wget gcc ca-certificates
 
 snaps=(
   brave
   discord
-  firefox
-  ksnip
-  ktouch
-  lxd
   multipass
   postman
   scc
@@ -33,8 +30,7 @@ done
 snaps_classic=(
   aws-cli
   code
-  pycharm-community
-  intellij-idea-community
+  ghostty
 )
 
 for snap in "${snaps_classic[@]}"; do

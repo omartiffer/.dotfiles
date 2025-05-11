@@ -22,5 +22,5 @@ gtk-titlebar = false
 background-opacity = 0.95
 
 # what is a prefix?
-# keybind = ctrl+d=scroll_page_fractional:0.5
-# keybind = ctrl+u=scroll_page_fractional:-0.5
+keybind = ctrl+j=scroll_page_fractional:0.5
+keybind = ctrl+k=scroll_page_fractional:-0.5

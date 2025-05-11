@@ -35,6 +35,7 @@ I'll keep adding things as the need arises.
 ├── .zshrc                  # Zsh config file (copied to ~/.zshrc)
 ├── LICENSE                 # License file (see the attributions section)
 ├── config.sh               # Copies all config files and sessionizer scripts to ~/
+├── gnome.sh                # Copies wallpapers and hydrates GNOME's dconf
 ├── install.sh              # Runs all scripts in the installs/ directory
 └── utils.sh                # Functions used across all scripts
 ```
@@ -45,7 +46,7 @@ I'll keep adding things as the need arises.
 
 Tested on:
 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04%20LTS-ef5b24?logo=ubuntu&style=for-the-badge)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04.2%20LTS-ef5b24?logo=ubuntu&style=for-the-badge)
 ![GNOME](https://img.shields.io/badge/Desktop-GNOME%2046-4a86cf?logo=gnome&style=for-the-badge)
 
 ### 1. Clone the repo

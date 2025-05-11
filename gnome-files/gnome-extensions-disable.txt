@@ -1,5 +1,0 @@
-drive-menu@gnome-shell-extensions.gcampax.github.com
-launch-new-instance@gnome-shell-extensions.gcampax.github.com
-places-menu@gnome-shell-extensions.gcampax.github.com
-light-style@gnome-shell-extensions.gcampax.github.com
-workspace-indicator@gnome-shell-extensions.gcampax.github.com

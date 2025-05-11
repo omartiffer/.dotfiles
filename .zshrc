@@ -60,7 +60,9 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# source <(fzf --zsh)
+
+zstyle ':completion:*' menu select
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

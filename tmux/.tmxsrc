@@ -1,0 +1,2 @@
+tmux send-keys "vim ." ^M
+tmux new-window -d
