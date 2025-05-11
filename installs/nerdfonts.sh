@@ -31,3 +31,5 @@ for url in "${font_urls[@]}"; do
 done
 
 fc-cache -fv
+
+log OK "Nerd fonts installed\n"

@@ -115,7 +115,7 @@ or
 ./gnome.sh
 ```
 
-This script copies all desktop backgrounds in [`gnome-files/backgrounds/`](/gnome-files/backgrounds/) and loads [`gnome.dconf`](/gnome-files/gnome.dconf).
+This script copies all desktop backgrounds in [`gnome-files/backgrounds/`](/gnome-files/backgrounds/) to `~/.local/share/backgrounds/` and loads [`gnome.dconf`](/gnome-files/gnome.dconf).
 
 ## 🤝 Attributions
 

@@ -1,3 +1,11 @@
+[apps/update-manager]
+first-run=false
+launch-count=1
+launch-time=int64 1746981795
+show-details=true
+window-height=400
+window-width=645
+
 [com/mattjakeman/ExtensionManager]
 height=600
 is-maximized=true
@@ -8,7 +16,7 @@ width=800
 release-check-time=uint32 1746929923
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='keyboard'
 window-state=(980, 640, true)
 
 [org/gnome/desktop/app-folders]
@@ -68,6 +76,9 @@ picture-uri='file:///home/omartiffer/.local/share/backgrounds/Northern_lights_by
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+
 [org/gnome/desktop/wm/keybindings]
 cycle-windows=['<Alt>Tab']
 cycle-windows-backward=['<Shift><Alt>Tab']
@@ -75,6 +86,12 @@ move-to-monitor-down=@as []
 move-to-monitor-left=['<Shift><Super>h']
 move-to-monitor-right=['<Shift><Super>l']
 move-to-monitor-up=@as []
+move-to-workspace-1=['<Control><Alt>1']
+move-to-workspace-2=['<Control><Alt>2']
+move-to-workspace-3=['<Control><Alt>3']
+move-to-workspace-4=['<Control><Alt>4']
+move-to-workspace-5=['<Control><Alt>5']
+move-to-workspace-6=['<Control><Alt>6']
 move-to-workspace-last=@as []
 move-to-workspace-left=@as []
 move-to-workspace-right=@as []
@@ -100,12 +117,12 @@ migrated=true
 dynamic-workspaces=false
 
 [org/gnome/nautilus/preferences]
-default-folder-viewer='icon-view'
+default-folder-viewer='list-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(768, 428)
 maximized=true
 
 [org/gnome/settings-daemon/plugins/color]
@@ -195,7 +212,7 @@ activate-after-ms=uint32 100
 fade-enable=false
 font-size=uint32 20
 icon-size=uint32 22
-launcher-stats='{"org.gnome.TextEditor.desktop":1,"brave_brave.desktop":3,"ghostty_ghostty.desktop":2,"com.mattjakeman.ExtensionManager.desktop":1}'
+launcher-stats='{"org.gnome.TextEditor.desktop":1,"brave_brave.desktop":3,"ghostty_ghostty.desktop":9,"com.mattjakeman.ExtensionManager.desktop":1}'
 max-width-percentage=uint32 36
 on-active-display=true
 show-switcher=['<Alt>s']
