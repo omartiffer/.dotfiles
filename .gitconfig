@@ -1,6 +1,6 @@
 [core]
 	pager = less -FRX
-	editor = vim
+	editor = nvim
 [user]
 	email = me@omartiffer.cloud
 	name = Omar Tiffer

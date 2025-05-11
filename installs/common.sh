@@ -6,7 +6,7 @@ parse_args "$@"
 
 log INFO "Installing common packages..."
 if_not_dry sudo apt-get update
-if_not_dry sudo apt-get install -y git unzip curl jq fzf ripgrep wget gcc ca-certificates
+if_not_dry sudo apt-get install -y git unzip curl jq fzf ripgrep wget yq gcc ca-certificates
 
 snaps=(
   brave

@@ -48,9 +48,6 @@ copy_dir "$DOTFILES"/.local "$HOME"/.local
 
 copy_file "$DOTFILES"/.zshrc "$HOME"/.zshrc
 copy_file "$DOTFILES"/.gitconfig "$HOME"/.gitconfig
-copy_file "$DOTFILES"/tmux/.tmux.conf "$HOME"/.tmux.conf
-copy_file "$DOTFILES"/tmux/.tmxsrc "$HOME"/.tmux/.tmxsrc
+copy_file "$DOTFILES"/.tmux.conf "$HOME"/.tmux.conf
 
-log INFO "Setting appropriate permissions for personal scripts..."
-if_not_dry chmod u+x "$HOME"/.local/my-scripts/tmux-sessionizer
-if_not_dry chmod u+x "$HOME"/.local/my-scripts/tmux-session-bootstrapper
+log OK "Successfully copied configuration files\n"

@@ -20,6 +20,6 @@
 if [[ -f ./.tmxsrc ]]; then
   source ./.tmxsrc
 elif [[ -f ~/.config/tmux/.tmxsrc ]]; then
-  source "$HOME"/.config/tmux/.tmxsrc
+  source "$HOME"/config/.tmux/.tmxsrc
 fi
 clear

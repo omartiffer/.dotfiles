@@ -81,7 +81,7 @@ export DOTFILES=$HOME/workspace/.dotfiles
 ./install.sh
 ```
 
-This script runs all available scripts in the `installs/` directory. You can run a specific install script by passing a name to [`install.sh`](/install.sh) as an argument. For example:
+This script runs all available scripts in the [`installs/`](/installs/) directory. You can run a specific install script by passing a name to [`install.sh`](/install.sh) as an argument. For example:
 
 ```bash
 ./install.sh docker
@@ -108,6 +108,14 @@ or
 ```bash
 ./config.sh --dry-run
 ```
+
+### 7. Load GNOME config (optional)
+
+```bash
+./gnome.sh
+```
+
+This script copies all desktop backgrounds in [`gnome-files/backgrounds/`](/gnome-files/backgrounds/) and loads [`gnome.dconf`](/gnome-files/gnome.dconf).
 
 ## 🤝 Attributions
 
