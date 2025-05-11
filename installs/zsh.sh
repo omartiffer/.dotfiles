@@ -21,6 +21,4 @@ if_not_dry git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
 if_not_dry git clone https://github.com/MichaelAquilina/zsh-you-should-use.git \
   "$HOME"/.oh-my-zsh/custom/plugins/you-should-use
 
-if_not_dry omz reload
-
 log OK "Zhs setup complete!\n"
