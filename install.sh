@@ -21,8 +21,9 @@ source "$DOTFILES"/utils.sh
 
 parse_args "$@"
 
-if_not_dry mkdir "$HOME"/.local/my-scripts
-if_not_dry export PATH="$PATH":"$HOME"/.local/my-scripts
+log INFO "Installing required packages..."
+if_not_dry sudo apt-get update
+if_not_dry sudo apt-get install -y git unzip curl jq fzf ripgrep wget yq gcc ca-certificates
 
 if [[ -n $filter ]]; then
   log INFO "Running with filter=$filter..."

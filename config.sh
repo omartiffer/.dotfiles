@@ -21,6 +21,9 @@ source "$DOTFILES"/utils.sh
 
 parse_args "$@"
 
+if_not_dry mkdir "$HOME"/.local/my-scripts
+if_not_dry export PATH="$PATH":"$HOME"/.local/my-scripts
+
 copy_dir() {
   local from=$1
   local to=$2
