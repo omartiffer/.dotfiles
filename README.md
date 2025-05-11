@@ -111,11 +111,18 @@ or
 
 ### 7. Load GNOME config (optional)
 
+Use the GNOME extension manager to install the following extensions:
+- Just Perfection
+- Space Bar
+- Switcher
+
+Then run the [`gnome.sh`](/gnome.sh) script:
+
 ```bash
 ./gnome.sh
 ```
 
-This script copies all desktop backgrounds in [`gnome-files/backgrounds/`](/gnome-files/backgrounds/) to `~/.local/share/backgrounds/` and loads [`gnome.dconf`](/gnome-files/gnome.dconf).
+This script copies all desktop backgrounds in [`gnome-files/backgrounds/`](/gnome-files/backgrounds/) to `~/.local/share/backgrounds/` and loads [`gnome.dconf`](/gnome-files/gnome.dconf) to apply GNOME + extensions settings.
 
 ## 🤝 Attributions
 
