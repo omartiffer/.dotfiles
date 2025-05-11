@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e
 
 I'll keep adding things as the need arises.
 
-## 📂 Project sructure
+## 📂 Project structure
 
 ```text
 /
@@ -97,7 +97,7 @@ Will only run the docker installation script and skip the rest.
 
 This script copies all configuration files to their expected locations under `~/` and places the tmux sessionizer scripts in `~/.local/my-scripts`.
 
-### 6. Test before running
+### 6. Test before running (dry mode)
 
 ```bash
 ./install.sh --dry-run

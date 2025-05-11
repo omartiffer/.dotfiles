@@ -17,6 +17,8 @@ theme = catppuccin-mocha
 #theme = Monokai Pro Machine
 # background = 000000
 
+font-family = CaskaydiaCove Nerd Font
+
 shell-integration-features = no-cursor,no-sudo,no-title
 gtk-titlebar = false
 background-opacity = 0.95
