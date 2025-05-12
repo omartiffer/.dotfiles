@@ -41,7 +41,6 @@ alias tx="tmuxinator"
 
 # ENVs
 export EDITOR='nvim'
-export DOTFILES=$HOME/workspace/.dotfiles
 
 # Add to PATH
 export PATH=$PATH:/usr/local/go/bin
