@@ -2,7 +2,7 @@
 
 <!--toc:start-->
 - [Dotfiles](#dotfiles)
-  - [✨ What’s in here?](#what-s-in-here)
+  - [✨ What’s in here?](#✨-whats-in-here)
   - [📂 Project structure](#📂-project-structure)
   - [👨‍💻 Getting started (at your own risk)](#👨‍💻-getting-started-at-your-own-risk)
     - [1. Clone the repo](#1-clone-the-repo)
