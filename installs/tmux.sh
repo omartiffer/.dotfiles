@@ -18,4 +18,4 @@ if_not_dry git clone -b v2.1.3 https://github.com/catppuccin/tmux.git \
 log INFO "Installing Tmuxinator..."
 if_not_dry sudo apt install -y tmuxinator
 
-log OK "Tmux setup complete!\n"
+log OK "Tmux installed successfully\n"

@@ -5,6 +5,6 @@ source "$DOTFILES/utils.sh"
 parse_args "$@"
 
 log INFO "Installing Starship shell prompt..."
-if_not_dry curl -sS https://starship.rs/install.sh | sh
+if_not_dry curl -sS https://starship.rs/install.sh | sh -s -- -y
 
-log OK "Starship setup complete!\n"
+log OK "Starship installed successfully\n"

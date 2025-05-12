@@ -19,4 +19,4 @@ if_not_dry nvm current
 log INFO "Installed NPM version:"
 if_not_dry npm -v
 
-log OK "Successfully installed Node.js\n"
+log OK "Node.js installed successfully\n"

@@ -1,5 +1,20 @@
 # Dotfiles
 
+<!--toc:start-->
+- [Dotfiles](#dotfiles)
+  - [✨ What’s in here?](#what-s-in-here)
+  - [📂 Project structure](#📂-project-structure)
+  - [👨‍💻 Getting started (at your own risk)](#👨‍💻-getting-started-at-your-own-risk)
+    - [1. Clone the repo](#1-clone-the-repo)
+    - [2. Change into the cloned .dotfiles directory](#2-change-into-the-cloned-dotfiles-directory)
+    - [3. Set the `DOTFILES` environment variable to the absolute path of the cloned repo](#3-set-the-dotfiles-environment-variable-to-the-absolute-path-of-the-cloned-repo)
+    - [4. Run the installation script](#4-run-the-installation-script)
+    - [5. Run the configuration script](#5-run-the-configuration-script)
+    - [6. Test before running (dry mode)](#6-test-before-running-dry-mode)
+    - [7. Load GNOME config (optional)](#7-load-gnome-config-optional)
+  - [🤝 Attributions](#🤝-attributions)
+<!--toc:end-->
+
 [![License](https://img.shields.io/github/license/oatiffer/.dotfiles)](/LICENSE)
 
 > **"This was supposed to be fun!"**  
@@ -9,7 +24,7 @@ My attempt to shellscript my way through automating the setup of my next shiny c
 
 I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of convention over configuration (see [Attributions](#-attributions) below). Whenever I need to change a config, I edit the files in the repo and run [`config.sh`](/config.sh). I might switch approaches later, but this works well for now.
 
-https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e
+<https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e>
 
 ## ✨ What’s in here?
 
@@ -112,6 +127,7 @@ or
 ### 7. Load GNOME config (optional)
 
 Use the GNOME extension manager to install the following extensions:
+
 - Just Perfection
 - Space Bar
 - Switcher
@@ -130,4 +146,3 @@ This script copies all desktop backgrounds in [`gnome-files/backgrounds/`](/gnom
 - [@ThePrimeagen](https://github.com/ThePrimeagen) – I studied the scripts in his dotfiles repo line by line. Portions of this project are based on code from his [My Dev Setup Is Better Than Yours](https://frontendmasters.com/courses/developer-productivity-v2/) course on [Frontend Masters](https://frontendmasters.com/). The original code is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and modifications may have been made.
 
 **NOTE:** I used these repos and course to learn the concepts, syntax, and pick up ideas. Most of the code you'll find here is still my own (and ChatGPT's).
-

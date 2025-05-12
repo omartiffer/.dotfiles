@@ -23,4 +23,4 @@ if_not_dry tar zxpf /tmp/luarocks-3.11.1.tar.gz -C "$HOME/.local/src" >/dev/null
 log INFO "Installing Neovim..."
 if_not_dry sudo snap install --classic nvim
 
-log OK "Neovim setup complete!\n"
+log OK "Neovim installed successfully\n"

@@ -32,4 +32,4 @@ done
 
 fc-cache -fv
 
-log OK "Nerd fonts installed\n"
+log OK "Nerd fonts installed successfully\n"

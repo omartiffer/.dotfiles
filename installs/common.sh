@@ -38,4 +38,4 @@ for snap in "${snaps_classic[@]}"; do
   fi
 done
 
-log OK "Successfully installed common apps\n"
+log OK "Common apps installed successfully\n"

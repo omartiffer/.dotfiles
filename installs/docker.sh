@@ -25,13 +25,8 @@ if_not_dry sudo apt-get update
 log INFO "Installing Docker..."
 if_not_dry sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-log INFO "Creating Docker group and adding the urser to it..."
-if_not_dry sudo groupadd docker
-if_not_dry sudo usermod -aG docker "$USER"
-if_not_dry newgrp docker
-
 log INFO "Fixing permissions on ~/.docker/ (just in case)..."
 if_not_dry sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 if_not_dry sudo chmod g+rwx "$HOME/.docker" -R
 
-log OK "Successfully installed Docker\n"
+log OK "Docker installed successfully\n"

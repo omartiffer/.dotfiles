@@ -21,8 +21,8 @@ if_not_dry git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
 if_not_dry git clone https://github.com/MichaelAquilina/zsh-you-should-use.git \
   "$HOME"/.oh-my-zsh/custom/plugins/you-should-use
 
-if_not_dry echo "$DOTFILES" >>"$DOTFILES"/.zshrc
+if_not_dry echo -e "#\n.dotfiles env\nexport DOTFILES=$DOTFILES" >>"$DOTFILES"/.zshrc
 
-if_not_dry chsh -s "$(which zsh)"
+if_not_dry sudo chsh -s "$(which zsh)"
 
-log OK "Zhs setup complete!\n"
+log OK "zsh installed successfully\n"
