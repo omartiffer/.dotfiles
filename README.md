@@ -2,9 +2,9 @@
 
 <!--toc:start-->
 - [Dotfiles](#dotfiles)
-  - [✨ What’s in here?](#:sparkles:-whats-in-here)
-  - [📂 Project structure](#📂-project-structure)
-  - [👨‍💻 Getting started (at your own risk)](#👨‍💻-getting-started-at-your-own-risk)
+  - [✨ What’s in here?](#sparkles-whats-in-here)
+  - [📂 Project structure](#open_file_folder-project-structure)
+  - [👨‍💻 Getting started (at your own risk)](#man_technologist-getting-started-at-your-own-risk)
     - [1. Clone the repo](#1-clone-the-repo)
     - [2. Change into the cloned .dotfiles directory](#2-change-into-the-cloned-dotfiles-directory)
     - [3. Set the `DOTFILES` environment variable to the absolute path of the cloned repo](#3-set-the-dotfiles-environment-variable-to-the-absolute-path-of-the-cloned-repo)
@@ -12,7 +12,7 @@
     - [5. Run the configuration script](#5-run-the-configuration-script)
     - [6. Test before running (dry mode)](#6-test-before-running-dry-mode)
     - [7. Load GNOME config (optional)](#7-load-gnome-config-optional)
-  - [🤝 Attributions](#🤝-attributions)
+  - [🤝 Attributions](#handshake-attributions)
 <!--toc:end-->
 
 [![License](https://img.shields.io/github/license/oatiffer/.dotfiles)](/LICENSE)
@@ -26,7 +26,7 @@ I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of conventio
 
 <https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e>
 
-## ✨ What’s in here?
+## :sparkles: What’s in here?
 
 - ⚙️ Config files for the tools I use
 - 🚀 Install scripts for those tools
@@ -36,7 +36,7 @@ I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of conventio
 
 I'll keep adding things as the need arises.
 
-## 📂 Project structure
+## :open_file_folder: Project structure
 
 ```text
 /
@@ -55,7 +55,7 @@ I'll keep adding things as the need arises.
 └── utils.sh                # Functions used across all scripts
 ```
 
-## 👨‍💻 Getting started (at your own risk)
+## :man_technologist: Getting started (at your own risk)
 
 **IMPORTANT:** These files are tailored for my machine, OS, and habits — feel free to use/fork **(at your own risk)**, suggest changes, or just laugh at my choices.
 
@@ -140,7 +140,7 @@ Then run the [`gnome.sh`](/gnome.sh) script:
 
 This script copies all desktop backgrounds in [`gnome-files/backgrounds/`](/gnome-files/backgrounds/) to `~/.local/share/backgrounds/` and loads [`gnome.dconf`](/gnome-files/gnome.dconf) to apply GNOME + extensions settings.
 
-## 🤝 Attributions
+## :handshake: Attributions
 
 - [@dwt1](https://gitlab.com/dwt1) – I learned a lot from him when I was considering using a bare repo for my dotfiles.
 - [@ThePrimeagen](https://github.com/ThePrimeagen) – I studied the scripts in his dotfiles repo line by line. Portions of this project are based on code from his [My Dev Setup Is Better Than Yours](https://frontendmasters.com/courses/developer-productivity-v2/) course on [Frontend Masters](https://frontendmasters.com/). The original code is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and modifications may have been made.
