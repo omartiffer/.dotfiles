@@ -1,61 +1,7 @@
-[apps/update-manager]
-first-run=false
-launch-count=1
-launch-time=int64 1746981795
-show-details=true
-window-height=400
-window-width=645
-
-[com/mattjakeman/ExtensionManager]
-height=600
-is-maximized=true
-last-used-version='0.5.0'
-width=800
-
-[com/ubuntu/update-notifier]
-release-check-time=uint32 1746929923
-
-[org/gnome/control-center]
-last-panel='power'
-window-state=(980, 640, true)
-
-[org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus']
-
-[org/gnome/desktop/app-folders/folders/Pardus]
-categories=['X-Pardus-Apps']
-name='X-Pardus-Apps.directory'
-translate=true
-
-[org/gnome/desktop/app-folders/folders/Utilities]
-apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
-categories=['X-GNOME-Utilities']
-name='X-GNOME-Utilities.directory'
-translate=true
-
-[org/gnome/desktop/app-folders/folders/YaST]
-categories=['X-SuSE-YaST']
-name='suse-yast.directory'
-translate=true
-
-[org/gnome/desktop/background]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///home/omartiffer/.local/share/backgrounds/Northern_lights_by_matthieugo.png'
-picture-uri-dark='file:///home/omartiffer/.local/share/backgrounds/Northern_lights_by_matthieugo.png'
-primary-color='#000000000000'
-secondary-color='#000000000000'
-
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us+colemak_dh'), ('xkb', 'us')]
 sources=[('xkb', 'us+colemak_dh'), ('xkb', 'us')]
 xkb-options=@as []
-
-[org/gnome/desktop/interface]
-color-scheme='prefer-dark'
-enable-animations=true
-gtk-theme='Yaru-blue-dark'
-icon-theme='Yaru-blue'
 
 [org/gnome/desktop/notifications]
 application-children=['org-gnome-shell-extensions']
@@ -68,13 +14,6 @@ numlock-state=true
 
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
-
-[org/gnome/desktop/screensaver]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///home/omartiffer/.local/share/backgrounds/Northern_lights_by_matthieugo.png'
-primary-color='#000000000000'
-secondary-color='#000000000000'
 
 [org/gnome/desktop/session]
 idle-delay=uint32 900
@@ -113,15 +52,11 @@ switch-windows-backward=@as []
 [org/gnome/desktop/wm/preferences]
 num-workspaces=6
 
-[org/gnome/evolution-data-server]
-migrated=true
-
 [org/gnome/mutter]
 dynamic-workspaces=false
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
-migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
@@ -241,7 +176,7 @@ list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '7f9a842f-2765-46dd-a96e-45f25b1da
 audible-bell=false
 background-color='rgb(23,20,33)'
 background-transparency-percent=4
-font='Ubuntu Sans Mono 12'
+font='UbuntuMono Nerd Font 12'
 foreground-color='rgb(208,207,204)'
 palette=['rgb(23,20,33)', 'rgb(192,28,40)', 'rgb(38,162,105)', 'rgb(162,115,76)', 'rgb(18,72,139)', 'rgb(163,71,186)', 'rgb(42,161,179)', 'rgb(208,207,204)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(51,199,222)', 'rgb(255,255,255)']
 use-system-font=false
@@ -253,21 +188,3 @@ visible-name='omartiffer'
 [org/gtk/gtk4/settings/color-chooser]
 custom-colors=[(1.0, 1.0, 1.0, 0.30000001192092896)]
 selected-color=(true, 0.20784313976764679, 0.51764708757400513, 0.89411765336990356, 1.0)
-
-[org/gtk/gtk4/settings/file-chooser]
-show-hidden=false
-sort-directories-first=true
-
-[org/gtk/settings/file-chooser]
-date-format='regular'
-location-mode='path-bar'
-show-hidden=false
-show-size-column=true
-show-type-column=true
-sidebar-width=160
-sort-column='name'
-sort-directories-first=false
-sort-order='ascending'
-type-format='category'
-window-position=(348, 40)
-window-size=(1203, 902)
