@@ -1,6 +1,7 @@
 # Dotfiles
 
 <!--toc:start-->
+
 - [Dotfiles](#dotfiles)
   - [✨ What’s in here?](#sparkles-whats-in-here)
   - [📂 Project structure](#open_file_folder-project-structure)
@@ -13,7 +14,7 @@
     - [6. Test before running (dry mode)](#6-test-before-running-dry-mode)
     - [7. Load GNOME config (optional)](#7-load-gnome-config-optional)
   - [🤝 Attributions](#handshake-attributions)
-<!--toc:end-->
+  <!--toc:end-->
 
 [![License](https://img.shields.io/github/license/oatiffer/.dotfiles)](/LICENSE)
 
@@ -22,7 +23,7 @@
 
 My attempt to shellscript my way through automating the setup of my next shiny computer. This is an evolving collection of config files, setup scripts, and personal preferences designed as a full environment bootstrapper.
 
-I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of convention over configuration (see [Attributions](#-attributions) below). Whenever I need to change a config, I edit the files in the repo and run [`config.sh`](/config.sh). I might switch approaches later, but this works well for now.
+I follow [@ThePrimeagen's](https://github.com/ThePrimeagen) premise of convention over configuration (see [🤝 Attributions](#handshake-attributions) below). Whenever I need to change a config, I edit the files in the repo and run [`config.sh`](/config.sh). I might switch approaches later, but this works well for now.
 
 <https://github.com/user-attachments/assets/60a63788-a49b-4a3b-82f4-b35eac8d307e>
 

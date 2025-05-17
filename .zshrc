@@ -45,6 +45,7 @@ export EDITOR='nvim'
 # Add to PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.local/my-scripts
+export PATH=/snap/aws-cli/1429/bin/:$PATH
 
 # Keymaps
 bindkey -s ^f "tmux-sessionizer\n"
@@ -66,3 +67,8 @@ zstyle ':completion:*' menu select
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# aws-cli command completions
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+complete -C '/snap/aws-cli/1429/bin/aws_completer' aws
