@@ -12,6 +12,7 @@ snaps=(
   scc
   slack
   spotify
+  firefox
 )
 
 for snap in "${snaps[@]}"; do
@@ -24,9 +25,13 @@ for snap in "${snaps[@]}"; do
 done
 
 snaps_classic=(
+  alacritty
   aws-cli
   code
   ghostty
+  goland
+  pycharm-community
+  intellij-idea-community
 )
 
 for snap in "${snaps_classic[@]}"; do
