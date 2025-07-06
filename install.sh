@@ -23,7 +23,7 @@ parse_args "$@"
 
 log INFO "Installing required packages..."
 if_not_dry sudo apt-get update
-if_not_dry sudo apt-get install -y git unzip curl jq fzf ripgrep wget yq gcc ca-certificates gnome-shell-extension-manager
+if_not_dry sudo apt-get install -y icdiff git unzip curl jq fzf ripgrep wget yq gcc ca-certificates gnome-shell-extension-manager
 
 if [[ -n $filter ]]; then
   log INFO "Running with filter=$filter..."
