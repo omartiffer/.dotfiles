@@ -72,3 +72,6 @@ export NVM_DIR="$HOME/.nvm"
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 complete -C '/snap/aws-cli/1429/bin/aws_completer' aws
+
+# .dotfiles env
+export DOTFILES=/home/omartiffer/workspace/.dotfiles/
